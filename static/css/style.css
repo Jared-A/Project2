@@ -45,3 +45,7 @@ body,
 .element:hover{
     background-color:red;
 }
+
+h1 {
+  text-align: center;
+}
