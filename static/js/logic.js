@@ -24,13 +24,13 @@ function addData() {
       try {
         var location = data1[i]["venue"]["location"];
         var venue = data1[i]["venue"].name;
+        var citystate = data1[i]["venue"]["display_location"]
         var locationMarker = L.marker([location.lat, location.lon])
-          .bindPopup("<h3>" + venue + "<h3>")
+          .bindPopup("<h3>" + venue + "<h3><h4>" + citystate + "</h4>" )
         locationMarkers.push(locationMarker);
       } catch (error) {
         console.log("No Venue")
       }
-
     }
 
     var layerGrp = L.layerGroup(locationMarkers)
