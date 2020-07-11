@@ -1,9 +1,10 @@
 html,
+head,
 body,
 #map-id {
+  position: static;
   height: 100%;
-  padding: 0;
-  margin: 0;
+  margin-top: auto;
 }
 
 .legend {
@@ -46,6 +47,8 @@ body,
     background-color:red;
 }
 
-h1 {
-  text-align: center;
+body {
+  background-color: black;
+  color: white;
 }
+
